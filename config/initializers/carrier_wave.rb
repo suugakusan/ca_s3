@@ -1,4 +1,3 @@
-if Rails.env.production?
   CarrierWave.configure do |config|
     config.fog_credentials = {
       provider: "AWS",
@@ -8,4 +7,3 @@ if Rails.env.production?
     }
     config.fog_directory = "wavetest-app"
   end
-end
